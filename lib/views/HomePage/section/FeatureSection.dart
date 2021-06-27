@@ -14,59 +14,57 @@ class FeatureSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.symmetric(vertical: SpacingDimens.spacing12),
       color: PaletteColor.primarybg,
-      child: Column(
-        children: [
-          Container(
-            padding: EdgeInsets.symmetric(
-              horizontal: SpacingDimens.spacing24,
-            ),
-            child: Column(
-              children: [
-                Row(
-                  children: [
-                    featureTile(
-                      title: "Input Grade",
-                      icon: Icons.access_alarm,
-                      onTap: () => navigateTo(
-                        HomePage(),
-                      ),
-                    ),
-                    SizedBox(
-                      width: SpacingDimens.spacing16,
-                    ),
-                    featureTile(
-                      title: "Presence",
-                      icon: Icons.accessible_rounded,
-                      onTap: () => navigateTo(
-                        HomePage(),
-                      ),
-                    ),
-                    featureTile(
-                      title: "Input Grade",
-                      icon: Icons.access_alarm,
-                      onTap: () => navigateTo(
-                        HomePage(),
-                      ),
-                    ),
-                    SizedBox(
-                      width: SpacingDimens.spacing16,
-                    ),
-                    featureTile(
-                      title: "Presence",
-                      icon: Icons.accessible_rounded,
-                      onTap: () => navigateTo(
-                        HomePage(),
-                      ),
-                    ),
-                  ],
-                ),
-
-              ],
-            )
+      child: Container(
+          padding: EdgeInsets.symmetric(
+            horizontal: SpacingDimens.spacing24,
           ),
-        ],
-      ),
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  featureTile(
+                    title: "Input Grade",
+                    icon: Icons.access_alarm,
+                    onTap: () => navigateTo(
+                      HomePage(),
+                    ),
+                  ),
+                  SizedBox(
+                    width: SpacingDimens.spacing16,
+                  ),
+                  featureTile(
+                    title: "Presence",
+                    icon: Icons.accessible_rounded,
+                    onTap: () => navigateTo(
+                      HomePage(),
+                    ),
+                  ),
+                  SizedBox(
+                    width: SpacingDimens.spacing16,
+                  ),
+                  featureTile(
+                    title: "Input Grade",
+                    icon: Icons.access_alarm,
+                    onTap: () => navigateTo(
+                      HomePage(),
+                    ),
+                  ),
+                  SizedBox(
+                    width: SpacingDimens.spacing16,
+                  ),
+                  featureTile(
+                    title: "Presence",
+                    icon: Icons.accessible_rounded,
+                    onTap: () => navigateTo(
+                      HomePage(),
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          )),
     );
   }
 
@@ -84,16 +82,9 @@ class FeatureSection extends StatelessWidget {
       child: GestureDetector(
         onTap: onTap,
         child: Container(
-          height: 100,
-          decoration: BoxDecoration(
-            border: Border.all(
-              color: PaletteColor.primarybg2,
-              width: 1,
-            ),
-            borderRadius: BorderRadius.circular(
-              4.0,
-            ),
-          ),
+          height: 80,
+
+          color: PaletteColor.primary40,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -106,21 +97,17 @@ class FeatureSection extends StatelessWidget {
                 ),
                 child: Icon(
                   icon,
-                  size: 15,
+                  size: 35,
                   color: PaletteColor.primary,
                 ),
               ),
               Container(
                 margin: EdgeInsets.only(
-                  top: SpacingDimens.spacing8,
+                  top: SpacingDimens.spacing4,
                 ),
                 child: Text(
-                  title,
-                  style: TypographyStyle.caption.merge(
-                    TextStyle(
-                      color: PaletteColor.grey,
-                    ),
-                  ),
+                  "title",
+                  style: TypographyStyle.caption
                 ),
               ),
             ],

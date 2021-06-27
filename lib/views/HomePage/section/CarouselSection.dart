@@ -108,7 +108,7 @@ class _CarouselSectionState extends State<CarouselSection> {
           decoration: BoxDecoration(
             color: PaletteColor.grey40,
             borderRadius: BorderRadius.circular(
-              4.0,
+              12.0,
             ),
             image: DecorationImage(
               image: AssetImage(
@@ -125,7 +125,7 @@ class _CarouselSectionState extends State<CarouselSection> {
               begin: Alignment.centerLeft,
               stops: [0.1, 0.9],
               colors: [
-                PaletteColor.grey.withOpacity(.5),
+                PaletteColor.grey.withOpacity(.9),
                 Color(0xFF5D5D5D).withOpacity(0),
               ],
             ),
@@ -143,7 +143,7 @@ class _CarouselSectionState extends State<CarouselSection> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                'Let\'s Join!',
+                'Kelurahan',
                 style: TypographyStyle.title.merge(
                   TextStyle(
                     color: PaletteColor.primarybg,
@@ -154,7 +154,7 @@ class _CarouselSectionState extends State<CarouselSection> {
                 height: SpacingDimens.spacing8,
               ),
               Text(
-                'Workshop Python Basic 1.0',
+                'Tunjung Sekar',
                 style: TypographyStyle.paragraph.merge(
                   TextStyle(
                     color: PaletteColor.primarybg,

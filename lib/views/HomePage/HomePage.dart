@@ -1,10 +1,10 @@
 
 import 'package:flutter/material.dart';
-import 'package:umkmapp/theme/PaletteColor.dart';
 import 'package:umkmapp/views/HomePage/section/BadStudentSection.dart';
 import 'package:umkmapp/views/HomePage/section/CarouselSection.dart';
 import 'package:umkmapp/views/HomePage/section/FeatureSection.dart';
-import 'package:umkmapp/views/HomePage/section/LeftStuffSection.dart';
+import 'package:umkmapp/views/HomePage/section/KeteranganSection.dart';
+import 'package:umkmapp/views/HomePage/section/MapSection.dart';
 
 
 
@@ -15,8 +15,8 @@ class HomePage extends StatelessWidget {
     List _listItem = [
       CarouselSection(),
       FeatureSection(ctx: context),
-      LeftStuffSection(),
-      BadStudentSection(),
+      MapSection(latitude: -7.9292211, longitude: 112.6128844),
+      KeteranganSection(),
     ];
 
     return SafeArea(
