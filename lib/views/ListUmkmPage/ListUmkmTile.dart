@@ -5,16 +5,16 @@ import 'package:umkmapp/theme/PaletteColor.dart';
 import 'package:umkmapp/theme/SpacingDimens.dart';
 import 'package:umkmapp/theme/TypographyStyle.dart';
 
-class ListReportTile extends StatelessWidget {
+class ListUmkmTile extends StatelessWidget {
 
   String judul, alamat;
-  DateTime waktu;
+  String no_hp;
   final DateFormat dateFormat = DateFormat('EEEE, dd MMMM yyyy', "id_ID");
 
-  ListReportTile(
+  ListUmkmTile(
       {this.judul,
       this.alamat,
-      this.waktu,
+      this.no_hp,
     });
 
   @override
@@ -74,7 +74,7 @@ class ListReportTile extends StatelessWidget {
                     height: SpacingDimens.spacing4,
                   ),
                   Text(
-                    dateFormat.format(waktu),
+                    no_hp,
                     style: TypographyStyle.mini,
                   ),
                   SizedBox(

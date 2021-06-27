@@ -4,14 +4,14 @@ import 'package:umkmapp/theme/PaletteColor.dart';
 import 'package:umkmapp/theme/SpacingDimens.dart';
 import 'package:umkmapp/theme/TypographyStyle.dart';
 import 'package:umkmapp/views/HomePage/HomePage.dart';
-import 'package:umkmapp/views/ListUmkmPage/ListReportTile.dart';
+import 'package:umkmapp/views/ListUmkmPage/ListUmkmTile.dart';
 
-class ListReport extends StatefulWidget {
+class ListUmkm extends StatefulWidget {
   @override
-  _ListReportState createState() => _ListReportState();
+  _ListUmkmState createState() => _ListUmkmState();
 }
 
-class _ListReportState extends State<ListReport> {
+class _ListUmkmState extends State<ListUmkm> {
   @override
   void initState() {
     super.initState();
@@ -24,7 +24,7 @@ class _ListReportState extends State<ListReport> {
         backgroundColor: PaletteColor.primary,
         title: Padding(
           padding: const EdgeInsets.only(left: SpacingDimens.spacing12),
-          child: Text("Daftar Report",style: TypographyStyle.subtitle0.merge(TextStyle(color: PaletteColor.primarybg)),),
+          child: Text("UMKM Makan",style: TypographyStyle.subtitle0.merge(TextStyle(color: PaletteColor.primarybg)),),
         ),
       ),
       body: ListView.builder(
@@ -43,24 +43,15 @@ class _ListReportState extends State<ListReport> {
 //                );
               },
               child: Container(
-                child: ListReportTile(
-                  alamat: "item.lokasiKejadian",
-                  judul: "item.kejadian",
-                  waktu: DateTime.now(),
+                child: ListUmkmTile(
+                  judul: "Misccripy",
+                  alamat: "Jalan Margo Utomo No 12",
+                  no_hp: "0565181631",
                 ),
               ));
         },
       ),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: PaletteColor.primary,
-        child: Icon(Icons.add, ),
-        onPressed: ()
-        {Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => HomePage()),
-        );
-        },
-      ),
+
     );
   }
 }

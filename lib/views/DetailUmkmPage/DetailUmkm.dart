@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:umkmapp/theme/PaletteColor.dart';
 import 'package:umkmapp/theme/SpacingDimens.dart';
 import 'package:umkmapp/views/DetailUmkmPage/component/CarouselSection.dart';
-import 'package:umkmapp/views/ListUmkmPage/ListReportTile.dart';
+import 'package:umkmapp/views/ListUmkmPage/ListUmkmTile.dart';
 import 'component/TitleSection.dart';
 
 class DetailUmkmPage extends StatefulWidget {
@@ -76,30 +76,30 @@ class _DetailUmkmPageState extends State<DetailUmkmPage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     TitleSection(
-                      namaMasjid: "data.nama",
-                      alamatMasjid: "data.alamat",
+                      namaToko: "data.nama",
+                      alamatToko: "data.alamat",
                     ),
                     SizedBox(
                       height: SpacingDimens.spacing24,
                     ),
-                    Expanded(
-                      child: ListView.builder(
-                        physics: BouncingScrollPhysics(),
-                        itemCount: 7,
-                        itemBuilder: (context, index) {
-                          return GestureDetector(
-                              onTap: (){
-                              },
-                              child: Container(
-                                child: ListReportTile(
-                                  alamat: "item.lokasiKejadian",
-                                  judul: "item.kejadian",
-                                  waktu: DateTime.now(),
-                                ),
-                              ));
-                        },
-                      ),
-                    ),
+//                    Expanded(
+//                      child: ListView.builder(
+//                        physics: BouncingScrollPhysics(),
+//                        itemCount: 7,
+//                        itemBuilder: (context, index) {
+//                          return GestureDetector(
+//                              onTap: (){
+//                              },
+//                              child: Container(
+//                                child: ListUmkmTile(
+//                                  alamat: "item.lokasiKejadian",
+//                                  judul: "item.kejadian",
+//                                  no_hp: "08565181631",
+//                                ),
+//                              ));
+//                        },
+//                      ),
+//                    ),
                   ],
                 ),
               ),

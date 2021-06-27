@@ -6,24 +6,15 @@ import 'package:umkmapp/theme/SpacingDimens.dart';
 import 'package:umkmapp/theme/TypographyStyle.dart';
 
 class TitleSection extends StatelessWidget {
-  final String namaMasjid;
-  final String alamatMasjid;
-//  final List<Mosque> dataRating;
+  final String namaToko;
+  final String alamatToko;
 
   TitleSection(
-      {@required this.namaMasjid,
-      @required this.alamatMasjid,});
+      {@required this.namaToko,
+      @required this.alamatToko,});
 
   @override
   Widget build(BuildContext context) {
-//    int total = 0;
-//    if(dataRating.isEmpty){
-//      total = 0;
-//    }else{
-//      dataRating.forEach((element) {
-//        total += element.nilai;
-//      });
-//    }
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: SpacingDimens.spacing24),
@@ -32,7 +23,7 @@ class TitleSection extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            namaMasjid,
+            namaToko,
             style: TypographyStyle.subtitle0,
           ),
           SizedBox(
@@ -49,7 +40,7 @@ class TitleSection extends StatelessWidget {
                 width: SpacingDimens.spacing8,
               ),
               Text(
-                alamatMasjid,
+                alamatToko,
                 style: TypographyStyle.caption.merge(
                   TextStyle(
                     color: PaletteColor.grey80,

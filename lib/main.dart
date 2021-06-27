@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:intl/date_symbol_data_local.dart';
+import 'package:umkmapp/views/DetailUmkmPage/DetailUmkm.dart';
 import 'package:umkmapp/views/HomePage/HomePage.dart';
-import 'package:umkmapp/views/ListUmkmPage/ListReport.dart';
+import 'package:umkmapp/views/ListUmkmPage/ListUmkm.dart';
 import 'package:umkmapp/views/SplashScreenPage/SplashScreenPage.dart';
 
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: HomePage(),
+        body: DetailUmkmPage(),
       ),
     );
   }
