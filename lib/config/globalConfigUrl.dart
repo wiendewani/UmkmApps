@@ -1,11 +1,10 @@
 class GlobalConfigUrl{
-  static String baseUrl = "https://ngalam112.faftech.my.id/";
+  static String baseUrl = "https://tunjungsekar-umkm.my.id/";
 
   static String baseUrlApi = baseUrl + "api/";
 
-  static String login = baseUrlApi + "user/login";
-  static String users = baseUrlApi + "user/";
+  static String umkms = baseUrlApi + "umkms/";
+  static String product = baseUrlApi + "products/";
 
-  static String report = baseUrlApi + "report";
 
 }

@@ -5,6 +5,8 @@ import 'package:umkmapp/theme/PaletteColor.dart';
 import 'package:umkmapp/theme/SpacingDimens.dart';
 import 'package:umkmapp/theme/TypographyStyle.dart';
 import 'package:umkmapp/views/HomePage/HomePage.dart';
+import 'package:umkmapp/views/HomePage/component/RouteTransisition.dart';
+import 'package:umkmapp/views/ListUmkmPage/ListUmkm.dart';
 
 class FeatureSection extends StatelessWidget {
   final BuildContext ctx;
@@ -25,42 +27,26 @@ class FeatureSection extends StatelessWidget {
               Row(
                 children: [
                   featureTile(
-                    title: "Input Grade",
-                    icon: Icons.access_alarm,
+                    title: "Kuliner",
+                    icon: Icons.face,
                     onTap: () => navigateTo(
-                      HomePage(),
+                      ListUmkm(),
                     ),
                   ),
                   SizedBox(
                     width: SpacingDimens.spacing16,
                   ),
                   featureTile(
-                    title: "Presence",
-                    icon: Icons.accessible_rounded,
+                    title: "Usaha",
+                    icon: Icons.face,
                     onTap: () => navigateTo(
-                      HomePage(),
+                      ListUmkm(),
                     ),
                   ),
                   SizedBox(
                     width: SpacingDimens.spacing16,
                   ),
-                  featureTile(
-                    title: "Input Grade",
-                    icon: Icons.access_alarm,
-                    onTap: () => navigateTo(
-                      HomePage(),
-                    ),
-                  ),
-                  SizedBox(
-                    width: SpacingDimens.spacing16,
-                  ),
-                  featureTile(
-                    title: "Presence",
-                    icon: Icons.accessible_rounded,
-                    onTap: () => navigateTo(
-                      HomePage(),
-                    ),
-                  ),
+
                 ],
               ),
             ],
@@ -69,9 +55,9 @@ class FeatureSection extends StatelessWidget {
   }
 
   navigateTo(Widget target) {
-//    Navigator.of(ctx).push(
-//      routeTransition(target),
-//    );
+    Navigator.of(ctx).push(
+      routeTransition(target),
+    );
   }
 
   Widget featureTile(
@@ -106,7 +92,7 @@ class FeatureSection extends StatelessWidget {
                   top: SpacingDimens.spacing4,
                 ),
                 child: Text(
-                  "title",
+                    title,
                   style: TypographyStyle.caption
                 ),
               ),

@@ -11,7 +11,7 @@ class CarouselSection extends StatefulWidget {
 class _CarouselSectionState extends State<CarouselSection> {
   int _current = 0;
   List _imgList = [
-    'slide1.jpg',
+    'kripik.jpg',
   ];
 
   List<T> map<T>(List list, Function handler) {

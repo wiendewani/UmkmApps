@@ -1,6 +1,5 @@
 
 import 'package:flutter/material.dart';
-import 'package:umkmapp/views/HomePage/section/BadStudentSection.dart';
 import 'package:umkmapp/views/HomePage/section/CarouselSection.dart';
 import 'package:umkmapp/views/HomePage/section/FeatureSection.dart';
 import 'package:umkmapp/views/HomePage/section/KeteranganSection.dart';

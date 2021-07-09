@@ -21,7 +21,7 @@ class ListUmkmTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.only(
-          top: SpacingDimens.spacing12,
+          top: SpacingDimens.spacing8,
           right: SpacingDimens.spacing24,
           left: SpacingDimens.spacing24),
       padding: EdgeInsets.symmetric(
@@ -42,7 +42,7 @@ class ListUmkmTile extends StatelessWidget {
           Container(
             alignment: Alignment.center,
             child: Image.asset(
-              "assets/images/slide1.jpg",
+              "assets/images/kripik.jpg",
               height: 87,
               width: 87,
             ),

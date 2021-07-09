@@ -32,7 +32,7 @@ class TitleSection extends StatelessWidget {
           Row(
             children: [
               Icon(
-                Icons.child_friendly_rounded,
+                Icons.location_on,
                 size: 12,
                 color: PaletteColor.red,
               ),

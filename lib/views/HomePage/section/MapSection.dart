@@ -62,47 +62,50 @@ class _MapsSectionState extends State<MapSection>
   @override
   Widget build(BuildContext context) {
     super.build(context);
-    return Align(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Container(
-            margin: EdgeInsets.symmetric(
-                vertical: SpacingDimens.spacing16,
-                horizontal: SpacingDimens.spacing24),
-            alignment: Alignment.topLeft,
-            child: Text(
-              "Lokasi Kelurahan Tunjung Sekar",
-              style: TypographyStyle.subtitle2,
-            ),
-          ),
-          Container(
-            margin: EdgeInsets.symmetric(
-              horizontal: SpacingDimens.spacing24,
-            ),
-            width: double.infinity,
-            height: 240,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(
-                SpacingDimens.spacing88,
+    return Container(
+      color: PaletteColor.primarybg,
+      child: Align(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+              margin: EdgeInsets.symmetric(
+                  vertical: SpacingDimens.spacing16,
+                  horizontal: SpacingDimens.spacing24),
+              alignment: Alignment.topLeft,
+              child: Text(
+                "Lokasi Kelurahan Tunjung Sekar",
+                style: TypographyStyle.subtitle2,
               ),
             ),
-            child: GoogleMap(
-              zoomControlsEnabled: false,
-              initialCameraPosition:
-                  CameraPosition(target: _initialcameraposition),
-              mapType: MapType.normal,
-              onMapCreated: _onMapCreated,
-              markers: _markers,
-              myLocationEnabled: true,
-              onTap: (position) {},
-              padding: EdgeInsets.only(
-                top: 22,
+            Container(
+              margin: EdgeInsets.symmetric(
+                horizontal: SpacingDimens.spacing24,
+              ),
+              width: double.infinity,
+              height: 240,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(
+                  SpacingDimens.spacing88,
+                ),
+              ),
+              child: GoogleMap(
+                zoomControlsEnabled: false,
+                initialCameraPosition:
+                    CameraPosition(target: _initialcameraposition),
+                mapType: MapType.normal,
+                onMapCreated: _onMapCreated,
+                markers: _markers,
+                myLocationEnabled: true,
+                onTap: (position) {},
+                padding: EdgeInsets.only(
+                  top: 22,
+                ),
               ),
             ),
-          ),
 
-        ],
+          ],
+        ),
       ),
     );
   }

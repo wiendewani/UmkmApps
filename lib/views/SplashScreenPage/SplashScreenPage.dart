@@ -1,8 +1,6 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-import 'package:umkmapp/config/globalKeySharedPref.dart';
 import 'package:umkmapp/theme/PaletteColor.dart';
 import 'package:umkmapp/views/HomePage/HomePage.dart';
 
